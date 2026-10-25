@@ -1,0 +1,51 @@
+{
+  "args": {
+    "users": 50000,
+    "max_train": 100000,
+    "max_eval": 2000,
+    "max_len": 32,
+    "dim": 64,
+    "epochs": 8,
+    "reward_epochs": 5,
+    "batch": 128,
+    "lr": 0.001,
+    "rl_lr": 0.0001,
+    "rl_steps": 200,
+    "rl_batch": 16,
+    "group": 4,
+    "seed": 42,
+    "out": "artifacts/task2"
+  },
+  "device": "cpu",
+  "audit": {
+    "raw_examples": {
+      "train": 181733,
+      "valid": 16667,
+      "test": 17720
+    },
+    "cold_targets": {
+      "train": 0,
+      "valid": 929,
+      "test": 1340
+    },
+    "retained_examples": {
+      "train": 100000,
+      "valid": 2000,
+      "test": 2000
+    },
+    "retained_cold_targets": {
+      "train": 0,
+      "valid": 130,
+      "test": 165
+    },
+    "vocabulary_items": 8029,
+    "vocabulary_cutoff": "2021-08-09 00:00:00"
+  },
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scikit-learn": "1.9.1"
+  },
+  "reward_proxy": "observed watch fraction + censored 3-day next-active-day indicator"
+}

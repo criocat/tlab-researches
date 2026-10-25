@@ -1,0 +1,1101 @@
+{
+  "sft": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.5015522241592407,
+        "predicted_reward_frozen_context": 0.5015522241592407,
+        "auditor_reward": 0.523479700088501,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.27734375,
+        "kl_on_generated_context": 0.0,
+        "distinct_items": 29
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.42562931776046753,
+        "predicted_reward_frozen_context": 0.412326455116272,
+        "auditor_reward": 0.4360755681991577,
+        "within_rollout_repeat": 0.64453125,
+        "history_repeat": 0.203125,
+        "kl_on_generated_context": 0.0,
+        "distinct_items": 24
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.3593880534172058,
+        "predicted_reward_frozen_context": 0.3569760024547577,
+        "auditor_reward": 0.3807719349861145,
+        "within_rollout_repeat": 0.80078125,
+        "history_repeat": 0.1953125,
+        "kl_on_generated_context": 0.0,
+        "distinct_items": 23
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.3163623809814453,
+        "predicted_reward_frozen_context": 0.33078187704086304,
+        "auditor_reward": 0.347663015127182,
+        "within_rollout_repeat": 0.91015625,
+        "history_repeat": 0.1875,
+        "kl_on_generated_context": 0.0,
+        "distinct_items": 19
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.2927238941192627,
+        "predicted_reward_frozen_context": 0.316365510225296,
+        "auditor_reward": 0.3272467851638794,
+        "within_rollout_repeat": 0.95703125,
+        "history_repeat": 0.19140625,
+        "kl_on_generated_context": 0.0,
+        "distinct_items": 19
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          10440,
+          10440,
+          12192,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          4495,
+          7793,
+          7793,
+          7793,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          12192,
+          12192,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          16166,
+          16166,
+          16166,
+          16166,
+          11749
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          3784,
+          3784,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          16228,
+          15297,
+          16228
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          12192,
+          12192
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "rl_watch_unconstrained": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.6493556499481201,
+        "predicted_reward_frozen_context": 0.6493556499481201,
+        "auditor_reward": 0.6617417335510254,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.26171875,
+        "kl_on_generated_context": 1.0383309125900269,
+        "distinct_items": 9
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.6635891199111938,
+        "predicted_reward_frozen_context": 0.6498119831085205,
+        "auditor_reward": 0.6380244493484497,
+        "within_rollout_repeat": 0.9609375,
+        "history_repeat": 0.26171875,
+        "kl_on_generated_context": 1.2951138019561768,
+        "distinct_items": 6
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.6533977389335632,
+        "predicted_reward_frozen_context": 0.6530163288116455,
+        "auditor_reward": 0.6282861828804016,
+        "within_rollout_repeat": 0.9921875,
+        "history_repeat": 0.25390625,
+        "kl_on_generated_context": 1.394229769706726,
+        "distinct_items": 6
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.6421624422073364,
+        "predicted_reward_frozen_context": 0.6536867618560791,
+        "auditor_reward": 0.620812177658081,
+        "within_rollout_repeat": 0.9921875,
+        "history_repeat": 0.25,
+        "kl_on_generated_context": 1.43520188331604,
+        "distinct_items": 6
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.6318546533584595,
+        "predicted_reward_frozen_context": 0.652511477470398,
+        "auditor_reward": 0.6126827001571655,
+        "within_rollout_repeat": 0.98828125,
+        "history_repeat": 0.25,
+        "kl_on_generated_context": 1.466863989830017,
+        "distinct_items": 6
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          15297,
+          15297,
+          9728
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "rl_watch_kl01": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.5761332511901855,
+        "predicted_reward_frozen_context": 0.5761332511901855,
+        "auditor_reward": 0.5875057578086853,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.31640625,
+        "kl_on_generated_context": 0.029070930555462837,
+        "distinct_items": 31
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.5511599183082581,
+        "predicted_reward_frozen_context": 0.5430405139923096,
+        "auditor_reward": 0.5382143259048462,
+        "within_rollout_repeat": 0.73828125,
+        "history_repeat": 0.26953125,
+        "kl_on_generated_context": 0.03513457253575325,
+        "distinct_items": 25
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.49933135509490967,
+        "predicted_reward_frozen_context": 0.4941757619380951,
+        "auditor_reward": 0.4917139410972595,
+        "within_rollout_repeat": 0.82421875,
+        "history_repeat": 0.2734375,
+        "kl_on_generated_context": 0.03487658128142357,
+        "distinct_items": 23
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.46730372309684753,
+        "predicted_reward_frozen_context": 0.4669356346130371,
+        "auditor_reward": 0.467039555311203,
+        "within_rollout_repeat": 0.88671875,
+        "history_repeat": 0.2578125,
+        "kl_on_generated_context": 0.03270703926682472,
+        "distinct_items": 23
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.44451165199279785,
+        "predicted_reward_frozen_context": 0.4493585228919983,
+        "auditor_reward": 0.44614750146865845,
+        "within_rollout_repeat": 0.92578125,
+        "history_repeat": 0.25,
+        "kl_on_generated_context": 0.031062355265021324,
+        "distinct_items": 24
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          15297,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          4495,
+          9728,
+          9728,
+          9728,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          2954,
+          2954,
+          2954,
+          2954,
+          2954
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          15297,
+          15297,
+          16228
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "rl_watch_kl1": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.5338534116744995,
+        "predicted_reward_frozen_context": 0.5338534116744995,
+        "auditor_reward": 0.5513798594474792,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.28515625,
+        "kl_on_generated_context": 0.005552050657570362,
+        "distinct_items": 33
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.49145597219467163,
+        "predicted_reward_frozen_context": 0.47881948947906494,
+        "auditor_reward": 0.49240005016326904,
+        "within_rollout_repeat": 0.6640625,
+        "history_repeat": 0.234375,
+        "kl_on_generated_context": 0.00552195031195879,
+        "distinct_items": 24
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.43821555376052856,
+        "predicted_reward_frozen_context": 0.42802637815475464,
+        "auditor_reward": 0.43716326355934143,
+        "within_rollout_repeat": 0.78125,
+        "history_repeat": 0.2265625,
+        "kl_on_generated_context": 0.005373752675950527,
+        "distinct_items": 23
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.39755329489707947,
+        "predicted_reward_frozen_context": 0.39841875433921814,
+        "auditor_reward": 0.4065450429916382,
+        "within_rollout_repeat": 0.88671875,
+        "history_repeat": 0.20703125,
+        "kl_on_generated_context": 0.005192143376916647,
+        "distinct_items": 23
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.36582663655281067,
+        "predicted_reward_frozen_context": 0.3773607909679413,
+        "auditor_reward": 0.38138675689697266,
+        "within_rollout_repeat": 0.90234375,
+        "history_repeat": 0.21484375,
+        "kl_on_generated_context": 0.00512510584667325,
+        "distinct_items": 21
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          15297,
+          12192,
+          12192,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          4495,
+          7793,
+          7793,
+          7793,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          4495,
+          4495,
+          4495,
+          12192
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          16166,
+          16166,
+          10761,
+          10761,
+          11749
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          15297,
+          16228,
+          15297
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "rl_balanced_5step": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.5670616030693054,
+        "predicted_reward_frozen_context": 0.5670616030693054,
+        "auditor_reward": 0.5843477845191956,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.3046875,
+        "kl_on_generated_context": 0.02122197300195694,
+        "distinct_items": 33
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.5597192049026489,
+        "predicted_reward_frozen_context": 0.5453706383705139,
+        "auditor_reward": 0.548795223236084,
+        "within_rollout_repeat": 0.68359375,
+        "history_repeat": 0.265625,
+        "kl_on_generated_context": 0.027144575491547585,
+        "distinct_items": 27
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.5429472327232361,
+        "predicted_reward_frozen_context": 0.5227734446525574,
+        "auditor_reward": 0.5295943021774292,
+        "within_rollout_repeat": 0.80859375,
+        "history_repeat": 0.25390625,
+        "kl_on_generated_context": 0.029506877064704895,
+        "distinct_items": 25
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.5278695821762085,
+        "predicted_reward_frozen_context": 0.5128010511398315,
+        "auditor_reward": 0.523705005645752,
+        "within_rollout_repeat": 0.90234375,
+        "history_repeat": 0.2734375,
+        "kl_on_generated_context": 0.02930300123989582,
+        "distinct_items": 24
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.5096768140792847,
+        "predicted_reward_frozen_context": 0.49969232082366943,
+        "auditor_reward": 0.5031833648681641,
+        "within_rollout_repeat": 0.93359375,
+        "history_repeat": 0.26171875,
+        "kl_on_generated_context": 0.02871168777346611,
+        "distinct_items": 24
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          15297,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          7793,
+          7793,
+          7793,
+          7793,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          16166,
+          16166,
+          10761,
+          10761,
+          10761
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          15297,
+          15297,
+          16228
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "rl_return_5step": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.5392646789550781,
+        "predicted_reward_frozen_context": 0.5392646789550781,
+        "auditor_reward": 0.5596616864204407,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.3046875,
+        "kl_on_generated_context": 0.012911985628306866,
+        "distinct_items": 34
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.5176160335540771,
+        "predicted_reward_frozen_context": 0.4949878454208374,
+        "auditor_reward": 0.5110644698143005,
+        "within_rollout_repeat": 0.72265625,
+        "history_repeat": 0.265625,
+        "kl_on_generated_context": 0.016235515475273132,
+        "distinct_items": 28
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.5057706236839294,
+        "predicted_reward_frozen_context": 0.4879344403743744,
+        "auditor_reward": 0.4979841113090515,
+        "within_rollout_repeat": 0.85546875,
+        "history_repeat": 0.24609375,
+        "kl_on_generated_context": 0.016770822927355766,
+        "distinct_items": 25
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.48957014083862305,
+        "predicted_reward_frozen_context": 0.4705926477909088,
+        "auditor_reward": 0.4826509356498718,
+        "within_rollout_repeat": 0.91015625,
+        "history_repeat": 0.24609375,
+        "kl_on_generated_context": 0.016788484528660774,
+        "distinct_items": 25
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.46306395530700684,
+        "predicted_reward_frozen_context": 0.45277634263038635,
+        "auditor_reward": 0.4577144682407379,
+        "within_rollout_repeat": 0.93359375,
+        "history_repeat": 0.23828125,
+        "kl_on_generated_context": 0.016599835827946663,
+        "distinct_items": 24
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          10440,
+          10440,
+          10440,
+          10440,
+          10440
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          7793,
+          7793,
+          7793,
+          7793,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          16166,
+          16166,
+          10761,
+          10761,
+          10761
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          15297,
+          16228,
+          15297
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  },
+  "continued_sft_control": {
+    "steps": [
+      {
+        "step": 1,
+        "predicted_reward_free_context": 0.48738932609558105,
+        "predicted_reward_frozen_context": 0.48738932609558105,
+        "auditor_reward": 0.5099453926086426,
+        "within_rollout_repeat": 0.0,
+        "history_repeat": 0.2109375,
+        "kl_on_generated_context": 0.012352090328931808,
+        "distinct_items": 34
+      },
+      {
+        "step": 2,
+        "predicted_reward_free_context": 0.41851145029067993,
+        "predicted_reward_frozen_context": 0.40792590379714966,
+        "auditor_reward": 0.4262177050113678,
+        "within_rollout_repeat": 0.62890625,
+        "history_repeat": 0.1875,
+        "kl_on_generated_context": 0.011196211911737919,
+        "distinct_items": 25
+      },
+      {
+        "step": 3,
+        "predicted_reward_free_context": 0.357112318277359,
+        "predicted_reward_frozen_context": 0.35387927293777466,
+        "auditor_reward": 0.3756389617919922,
+        "within_rollout_repeat": 0.80859375,
+        "history_repeat": 0.18359375,
+        "kl_on_generated_context": 0.01093206275254488,
+        "distinct_items": 23
+      },
+      {
+        "step": 4,
+        "predicted_reward_free_context": 0.32546287775039673,
+        "predicted_reward_frozen_context": 0.3362991511821747,
+        "auditor_reward": 0.3539518117904663,
+        "within_rollout_repeat": 0.90234375,
+        "history_repeat": 0.17578125,
+        "kl_on_generated_context": 0.010767210274934769,
+        "distinct_items": 22
+      },
+      {
+        "step": 5,
+        "predicted_reward_free_context": 0.28612375259399414,
+        "predicted_reward_frozen_context": 0.30936214327812195,
+        "auditor_reward": 0.31938719749450684,
+        "within_rollout_repeat": 0.91015625,
+        "history_repeat": 0.17578125,
+        "kl_on_generated_context": 0.010613929480314255,
+        "distinct_items": 21
+      }
+    ],
+    "examples": [
+      {
+        "user_id": 772,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 1099,
+        "items": [
+          15297,
+          12192,
+          12192,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 1166,
+        "items": [
+          12192,
+          16228,
+          16228,
+          16228,
+          16228
+        ]
+      },
+      {
+        "user_id": 2473,
+        "items": [
+          4495,
+          7793,
+          7793,
+          7793,
+          7793
+        ]
+      },
+      {
+        "user_id": 3771,
+        "items": [
+          9728,
+          7829,
+          7829,
+          7829,
+          12192
+        ]
+      },
+      {
+        "user_id": 4027,
+        "items": [
+          2954,
+          2954,
+          2954,
+          12192,
+          12192
+        ]
+      },
+      {
+        "user_id": 4176,
+        "items": [
+          7829,
+          7829,
+          7829,
+          7829,
+          7829
+        ]
+      },
+      {
+        "user_id": 4222,
+        "items": [
+          9728,
+          9728,
+          9728,
+          9728,
+          9728
+        ]
+      },
+      {
+        "user_id": 4303,
+        "items": [
+          15297,
+          15297,
+          16228,
+          15297,
+          16228
+        ]
+      },
+      {
+        "user_id": 4771,
+        "items": [
+          10440,
+          12192,
+          12192,
+          12192,
+          12192
+        ]
+      }
+    ],
+    "interpretation": "Generated items are hypothetical, not observed consumption. Frozen-context scores are a diagnostic, not a counterfactual estimator."
+  }
+}

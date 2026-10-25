@@ -1,0 +1,614 @@
+[
+  {
+    "method": "random",
+    "attempt": 1,
+    "expression": "7,6,18,+,*",
+    "valid": true,
+    "valid_ndcg": 0.47020765891559796,
+    "delta": 0.0016382992789809037,
+    "seconds": 74.35871724299989,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 2,
+    "expression": "11,5,-,1,23,+,*",
+    "valid": true,
+    "valid_ndcg": 0.4712555327959545,
+    "delta": 0.002686173159337446,
+    "seconds": 66.63398170899995,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 3,
+    "expression": "11,sqrt_abs",
+    "valid": true,
+    "valid_ndcg": 0.4702538943206912,
+    "delta": 0.001684534684074146,
+    "seconds": 58.05810581900005,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 4,
+    "expression": "22,log,11,min_max,-",
+    "valid": true,
+    "valid_ndcg": 0.4702114136649569,
+    "delta": 0.0016420540283398344,
+    "seconds": 83.314745442,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 5,
+    "expression": "2,reciprocal",
+    "valid": true,
+    "valid_ndcg": 0.4690571991351578,
+    "delta": 0.00048783949854075415,
+    "seconds": 59.37459677200013,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 6,
+    "expression": "17,3,+",
+    "valid": true,
+    "valid_ndcg": 0.4691643712720721,
+    "delta": 0.0005950116354550561,
+    "seconds": 84.14287776000015,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 7,
+    "expression": "19,14,reciprocal,mod_column",
+    "valid": true,
+    "valid_ndcg": 0.46979808753899854,
+    "delta": 0.0012287279023814879,
+    "seconds": 57.22970946099986,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 8,
+    "expression": "16,min_max,13,*",
+    "valid": true,
+    "valid_ndcg": 0.46586025565424705,
+    "delta": -0.002709103982370009,
+    "seconds": 51.872179810000034,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 9,
+    "expression": "21,9,-,reciprocal",
+    "valid": true,
+    "valid_ndcg": 0.4692371667895426,
+    "delta": 0.0006678071529255258,
+    "seconds": 57.93367133700008,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 10,
+    "expression": "17,11,+,reciprocal",
+    "valid": true,
+    "valid_ndcg": 0.4708711171224527,
+    "delta": 0.002301757485835665,
+    "seconds": 83.20276184099998,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 11,
+    "expression": "13,22,division,sqrt_abs",
+    "valid": true,
+    "valid_ndcg": 0.4701280924942439,
+    "delta": 0.0015587328576268655,
+    "seconds": 83.55448183200019,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "random",
+    "attempt": 12,
+    "expression": "20,23,mod_column",
+    "valid": true,
+    "valid_ndcg": 0.4697390768622582,
+    "delta": 0.0011697172256411315,
+    "seconds": 54.59144164200006,
+    "prompt": null,
+    "response": null
+  },
+  {
+    "method": "llm",
+    "attempt": 1,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 2.0540809489998537,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ncol-4+col-3*col-2/col-1\n```"
+  },
+  {
+    "method": "llm",
+    "attempt": 2,
+    "expression": "2,3,log",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 0.4971714180001072,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-2,col-3,log"
+  },
+  {
+    "method": "llm",
+    "attempt": 3,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 4.278638604999969,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-3*col-2/col-1+col-4*col-5/col-6*col-7+col-8*col-9/col-10+col-11*col-12/col-13+col-14*col-15+col-16*col-17/col-18*col-19/col-20*col-21/col-22/col-23"
+  },
+  {
+    "method": "llm",
+    "attempt": 4,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.7701544500000637,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*log(col-4)/reciprocal(col-3)"
+  },
+  {
+    "method": "llm",
+    "attempt": 5,
+    "expression": "0,1,1,3,1",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 0.7682083540000804,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0,col-1,col-1,col-3,col-1"
+  },
+  {
+    "method": "llm",
+    "attempt": 6,
+    "expression": "0,log(col-1) * reciprocal(log(col-2)) - reciprocal(log(col-3)) + col-4 + sqrt_abs(col-5)",
+    "valid": false,
+    "error": "'log(col-1) * reciprocal(log(col-2)) - reciprocal(log(col-3)) + col-4 + sqrt_abs(col-5)'",
+    "seconds": 1.535405702000162,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0,log(col-1) * reciprocal(log(col-2)) - reciprocal(log(col-3)) + col-4 + sqrt_abs(col-5)"
+  },
+  {
+    "method": "llm",
+    "attempt": 7,
+    "expression": "0*log(col-1),reciprocal(col-2),sqrt_abs(col-3),4+col-5*col-6,reciprocal(col-7)",
+    "valid": false,
+    "error": "'0*log(col-1)'",
+    "seconds": 1.7789703879998342,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1),reciprocal(col-2),sqrt_abs(col-3),col-4+col-5*col-6,reciprocal(col-7)"
+  },
+  {
+    "method": "llm",
+    "attempt": 8,
+    "expression": "3,log,1,min_max,4,max_col,division,reciprocal,0,max_col,division,sqrt_abs,5,*,reciprocal,6,*,reciprocal,7,*,reciprocal,8,*,reciprocal,9,*,reciprocal,10,*,reciprocal,11,*,reciprocal,12,*,reciprocal,13,*,reciprocal,14,*,reciprocal,15,*,reciprocal,16,",
+    "valid": false,
+    "error": "Expression exceeds feature grammar budget",
+    "seconds": 5.147282636,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-3,log,col-1,min_max,col-4,max_col,/,reciprocal,col-0,max_col,/,sqrt_abs,col-5,*,reciprocal,col-6,*,reciprocal,col-7,*,reciprocal,col-8,*,reciprocal,col-9,*,reciprocal,col-10,*,reciprocal,col-11,*,reciprocal,col-12,*,reciprocal,col-13,*,reciprocal,col-14,*,reciprocal,col-15,*,reciprocal,col-16,"
+  },
+  {
+    "method": "llm",
+    "attempt": 9,
+    "expression": "2,3,log",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 0.48643201200002295,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-2,col-3,log"
+  },
+  {
+    "method": "llm",
+    "attempt": 10,
+    "expression": "0*log(col-1),0+col-2/col-1,reciprocal(col-3)*sqrt_abs(col-4),log(col-5)+col-1*col-3/col-1,mod_column(col-6,7)",
+    "valid": false,
+    "error": "'0*log(col-1)'",
+    "seconds": 2.5208712480000486,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1),col-0+col-2/col-1,reciprocal(col-3)*sqrt_abs(col-4),log(col-5)+col-1*col-3/col-1,mod_column(col-6,col-7)"
+  },
+  {
+    "method": "llm",
+    "attempt": 11,
+    "expression": "0,1,min,max,1/col-0,reciprocal",
+    "valid": false,
+    "error": "'min'",
+    "seconds": 0.9826698580000084,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0,col-1,min,max,col-1/col-0,reciprocal"
+  },
+  {
+    "method": "llm",
+    "attempt": 12,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 2.02943785399998,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-5*col-6/col-13+col-22*sqrt_abs(col-0)+reciprocal(col-7)*col-15+col-14*sqrt_abs(col-4)"
+  },
+  {
+    "method": "llm",
+    "attempt": 13,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.195983465999916,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*log(col-4)+col-2+sqrt_abs(col-6)*reciprocal(col-13)"
+  },
+  {
+    "method": "llm",
+    "attempt": 14,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.4162765029998354,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*col-3+col-2/col-5-logcol-0+col-4+reciprocal(col-9)"
+  },
+  {
+    "method": "llm",
+    "attempt": 15,
+    "expression": "15,16,log",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 0.5798390469999504,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-15,col-16,log"
+  },
+  {
+    "method": "llm",
+    "attempt": 16,
+    "expression": "3,log,reciprocal,1,sqrt_abs,reciprocal,2,mod_column,6",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 1.279365165999934,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-3,log,reciprocal,col-1,sqrt_abs,reciprocal,col-2,mod_column,col-6"
+  },
+  {
+    "method": "llm",
+    "attempt": 17,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 4.318626656000106,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*col-2/col-3+col-4*col-5/col-6*col-7+col-8*col-9*col-10/col-11*col-12/col-13+col-14*col-15+col-16*col-17*col-18*col-19*col-20*col-21*col-22*col-23"
+  },
+  {
+    "method": "llm",
+    "attempt": 18,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 5.206113174000166,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*col-1/col-2+col-3*log(col-2)/sqrt_abs(col-1)+col-4*reciprocal(col-5)+col-6*reciprocal(col-7)+col-8*reciprocal(col-9)*reciprocal(col-10)+col-11*reciprocal(col-12)+col-13*sqrt_abs(col-12)+col-14*sqrt_abs(col-13)*col-15*sqrt_abs(col-14)+col-16*sqrt_abs(col-15)*"
+  },
+  {
+    "method": "llm",
+    "attempt": 19,
+    "expression": "0*log(col-1),sqrt_abs(col-2),min_max(col-3)*reciprocal(col-4),5+col-6,log(col-7)",
+    "valid": false,
+    "error": "'0*log(col-1)'",
+    "seconds": 1.765005728999995,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1),sqrt_abs(col-2),min_max(col-3)*reciprocal(col-4),col-5+col-6,log(col-7)"
+  },
+  {
+    "method": "llm",
+    "attempt": 20,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.5103576649999013,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*log(col-1)"
+  },
+  {
+    "method": "llm",
+    "attempt": 21,
+    "expression": "20,17,16,22,-,log,18,21,-,log,division",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 1.4358497180000995,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-20,col-17,col-16,col-22,-,log,col-18,col-21,-,log,/"
+  },
+  {
+    "method": "llm",
+    "attempt": 22,
+    "expression": "0*log(col-1),sqrt_abs(col-2),min_max(col-3),reciprocal(col-4),+,-,5,division,*,+,-,6,division,7,division,8,division,9,division,10,division,11,division,12,division,13,division,14,division,15,division,16,division,17,division,18,division,19,division,20,division,col",
+    "valid": false,
+    "error": "Expression exceeds feature grammar budget",
+    "seconds": 5.163862481000024,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ncol-0*log(col-1),sqrt_abs(col-2),min_max(col-3),reciprocal(col-4),+,-,col-5,/,*,+,-,col-6,/,col-7,/,col-8,/,col-9,/,col-10,/,col-11,/,col-12,/,col-13,/,col-14,/,col-15,/,col-16,/,col-17,/,col-18,/,col-19,/,col-20,/,col"
+  },
+  {
+    "method": "llm",
+    "attempt": 23,
+    "expression": "22,18,-,reciprocal,log,mod_column,20,15,0,division,min_max,*,reciprocal,log,mod_column,12,13,-,reciprocal,log,mod_column,0,division,min_max,*,reciprocal,log,mod_column,12,13,-,reciprocal,log,mod_column,0,division,min_max,*,reciprocal,log,mod_column,12,13,-,reciprocal,log",
+    "valid": false,
+    "error": "Expression exceeds feature grammar budget",
+    "seconds": 5.069426913999905,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-22,col-18,-,reciprocal,log,mod_column,col-20,col-15,col-0,/,min_max,*,reciprocal,log,mod_column,col-12,col-13,-,reciprocal,log,mod_column,col-0,/,min_max,*,reciprocal,log,mod_column,col-12,col-13,-,reciprocal,log,mod_column,col-0,/,min_max,*,reciprocal,log,mod_column,col-12,col-13,-,reciprocal,log"
+  },
+  {
+    "method": "llm",
+    "attempt": 24,
+    "expression": "21,18,reciprocal,16,min_max,13",
+    "valid": false,
+    "error": "Multiple root nodes.",
+    "seconds": 1.0607675460000792,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-21,col-18,reciprocal,col-16,min_max,col-13"
+  },
+  {
+    "method": "llm",
+    "attempt": 25,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.8927663319998373,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1)/sqrt_abs(col-2) - col-3*reciprocal(col-4) + col-5/col-6 * (col-7+col-8)"
+  },
+  {
+    "method": "llm",
+    "attempt": 26,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.600875067999823,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1)+col-2*min_max(col-3)-col-4/col-5+col-6*sqrt_abs(col-7)"
+  },
+  {
+    "method": "llm",
+    "attempt": 27,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.4461799059999976,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-3+col-0*col-7/col-11*col-5*col-14+sqrt_abs(col-1)"
+  },
+  {
+    "method": "llm",
+    "attempt": 28,
+    "expression": "0*log(col-2),3+col-0*sqrt_abs(col-4)+col-1*min_max(col-5)/reciprocal(col-6)",
+    "valid": false,
+    "error": "'0*log(col-2)'",
+    "seconds": 1.6872134609998284,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-2),col-3+col-0*sqrt_abs(col-4)+col-1*min_max(col-5)/reciprocal(col-6)"
+  },
+  {
+    "method": "llm",
+    "attempt": 29,
+    "expression": "1,reciprocal,2,log,3,reciprocal,4,reciprocal,5,reciprocal,6,reciprocal,7,reciprocal,8,reciprocal,9,reciprocal,10,reciprocal,11,reciprocal,12,reciprocal,13,reciprocal,14,reciprocal,15,reciprocal,16,reciprocal,17,reciprocal,1",
+    "valid": false,
+    "error": "Expression exceeds feature grammar budget",
+    "seconds": 5.1269835210000565,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1,reciprocal,col-2,log,col-3,reciprocal,col-4,reciprocal,col-5,reciprocal,col-6,reciprocal,col-7,reciprocal,col-8,reciprocal,col-9,reciprocal,col-10,reciprocal,col-11,reciprocal,col-12,reciprocal,col-13,reciprocal,col-14,reciprocal,col-15,reciprocal,col-16,reciprocal,col-17,reciprocal,col-1"
+  },
+  {
+    "method": "llm",
+    "attempt": 30,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.8590501170001517,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*sqrt_abs(col-3)/reciprocal(col-2)"
+  },
+  {
+    "method": "llm",
+    "attempt": 31,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.6263888159996895,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1 * col-2 / col-3"
+  },
+  {
+    "method": "llm",
+    "attempt": 32,
+    "expression": "1*log(col-1),1*reciprocal(col-0)+log(col-1)/col-0,log(col-1),min_max(col-1),sqrt_abs(col-1),reciprocal(col-0)+log(col-1)*col-0,log(col-1),reciprocal(col-0)+col-1*sqrt_abs(col-1),log(col-1),min_max(col-1)+col-1*sqrt_abs(col-1),reciprocal(col-0)+col-1*min_max(col-1)",
+    "valid": false,
+    "error": "'1*log(col-1)'",
+    "seconds": 4.79952249400003,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*log(col-1),col-1*reciprocal(col-0)+log(col-1)/col-0,log(col-1),min_max(col-1),sqrt_abs(col-1),reciprocal(col-0)+log(col-1)*col-0,log(col-1),reciprocal(col-0)+col-1*sqrt_abs(col-1),log(col-1),min_max(col-1)+col-1*sqrt_abs(col-1),reciprocal(col-0)+col-1*min_max(col-1)"
+  },
+  {
+    "method": "llm",
+    "attempt": 33,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.5215892070000336,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*sqrt_abs(col-1) + reciprocal(col-2)*log(col-3)/min_max(col-4)*reciprocal(col-5)"
+  },
+  {
+    "method": "llm",
+    "attempt": 34,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.7806609760000356,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-6 * log(col-4) - reciprocal(col-1)"
+  },
+  {
+    "method": "llm",
+    "attempt": 35,
+    "expression": "0*sqrt_abs(col-1) + log(col-3)/col-1 + reciprocal(col-4)*min_max(col-5,0,100)",
+    "valid": false,
+    "error": "'0*sqrt_abs(col-1) + log(col-3)/col-1 + reciprocal(col-4)*min_max(col-5'",
+    "seconds": 1.7183938159996615,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*sqrt_abs(col-1) + log(col-3)/col-1 + reciprocal(col-4)*min_max(col-5, 0, 100)"
+  },
+  {
+    "method": "llm",
+    "attempt": 36,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 4.250201277000087,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1+col-2*col-3/col-4+col-5+col-6+col-7+col-8+col-9+col-10+col-11+col-12+col-13+col-14+col-15+col-16+col-17+col-18+col-19+col-20+col-21+col-22+col-23"
+  },
+  {
+    "method": "llm",
+    "attempt": 37,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 2.3995239169998968,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ni_rate_w7*log(i_rate_w7),i_recency*sqrt_abs(i_recency),ug_watch_w90/ug_count_w90,i_count_w30+u_count_w30,i_rate_w7/min_max(u_rate_w7)\n```"
+  },
+  {
+    "method": "llm",
+    "attempt": 38,
+    "expression": "1*log(col-2)/sqrt_abs(col-0),3/col-0,reciprocal(col-6),5+col-6,mod_column(col-1,142)",
+    "valid": false,
+    "error": "'1*log(col-2)/sqrt_abs(col-0)'",
+    "seconds": 1.9757774340000651,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*log(col-2)/sqrt_abs(col-0),col-3/col-0,reciprocal(col-6),col-5+col-6,mod_column(col-1,142)"
+  },
+  {
+    "method": "llm",
+    "attempt": 39,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 4.151075956000113,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1*col-2/col-3*col-4*col-5+col-6*col-7*col-8+col-9*col-10+col-11*col-12*col-13*col-14*col-15*col-16*col-17*col-18*col-19*col-20*col-21*col-22*col-23"
+  },
+  {
+    "method": "llm",
+    "attempt": 40,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 2.3955810379998184,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-3*sqrt_abs(col-4) - col-5/col-6*col-7*col-8 - log(sqrt_abs(col-4)) + col-9 + col-10 + reciprocal(col-11)/reciprocal(col-12)"
+  },
+  {
+    "method": "llm",
+    "attempt": 41,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.7735581850001836,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ncol-0*log(col-1)+sqrt_abs(col-2)/reciprocal(col-3)*log(col-4)+min_max(col-5)+mod_column(col-6)\n```"
+  },
+  {
+    "method": "llm",
+    "attempt": 42,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 1.8191386130001774,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0*log(col-1)+col-2/col-3+col-4*sqrt_abs(col-5)-col-6+min_max(col-7)*reciprocal(col-8)"
+  },
+  {
+    "method": "llm",
+    "attempt": 43,
+    "expression": "23,17,18,division,log,reciprocal,log,reciprocal,*,division",
+    "valid": false,
+    "error": "Missing one operand for operator division.",
+    "seconds": 1.2570626709998578,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-23,col-17,col-18,/,log,reciprocal,log,reciprocal,*,/"
+  },
+  {
+    "method": "llm",
+    "attempt": 44,
+    "expression": "0,log(col-1),2,*,reciprocal(col-3),division,sqrt_abs(col-4),min_max(col-5),reciprocal(col-6),division,sqrt_abs(col-7),log(col-8),9,division,sqrt_abs(col-10),reciprocal(col-11),division,sqrt_abs(col-12),log(col-13),14,division,sqrt_abs(col-15),reciprocal(col-16),division,sqrt_abs(col-17),log(col-18),19,division,",
+    "valid": false,
+    "error": "'log(col-1)'",
+    "seconds": 5.0019926760001,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-0,log(col-1),col-2,*,reciprocal(col-3),/,sqrt_abs(col-4),min_max(col-5),reciprocal(col-6),/,sqrt_abs(col-7),log(col-8),col-9,/,sqrt_abs(col-10),reciprocal(col-11),/,sqrt_abs(col-12),log(col-13),col-14,/,sqrt_abs(col-15),reciprocal(col-16),/,sqrt_abs(col-17),log(col-18),col-19,/,"
+  },
+  {
+    "method": "llm",
+    "attempt": 45,
+    "expression": "0*log(col-1),sqrt_abs(col-1),min_max(col-1),reciprocal(col-1),+,-,*",
+    "valid": false,
+    "error": "'0*log(col-1)'",
+    "seconds": 1.5331075280000732,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ncol-0*log(col-1),sqrt_abs(col-1),min_max(col-1),reciprocal(col-1),+,-,*\n```"
+  },
+  {
+    "method": "llm",
+    "attempt": 46,
+    "expression": null,
+    "valid": false,
+    "error": "No comma-separated RPN feature in model response",
+    "seconds": 0.943337641999733,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "```\ncol-1*log(col-2)/col-4/col-13\n```"
+  },
+  {
+    "method": "llm",
+    "attempt": 47,
+    "expression": "22,11,log,ug_share_w0,/col-23,0,14,log,ug_share_w30,/col-22,15,log,ug_watch_w0,/col-21,16,log,ug_count_w0,/col-20,17,log,ug_count_w30,/col-19,18,log,ug_recency,/col-17,16,log,ug_count_w0,/col-15,14,log,ug",
+    "valid": false,
+    "error": "Expression exceeds feature grammar budget",
+    "seconds": 4.9922079610000765,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-22,col-11,log,ug_share_w0,/col-23,col-0,col-14,log,ug_share_w30,/col-22,col-15,log,ug_watch_w0,/col-21,col-16,log,ug_count_w0,/col-20,col-17,log,ug_count_w30,/col-19,col-18,log,ug_recency,/col-17,col-16,log,ug_count_w0,/col-15,col-14,log,ug"
+  },
+  {
+    "method": "llm",
+    "attempt": 48,
+    "expression": "1,min_max(col-0),sqrt_abs,log(1+col-1)*log(1+col-2)/log(1+col-3)+reciprocal(col-4),5*col-6/col-7*col-8+col-9*col-10+ug_share_w0*col-11+col-12*col-13+col-14*col-15*col-16+col-17*col-18+col-19*col-20*col-21*",
+    "valid": false,
+    "error": "'min_max(col-0)'",
+    "seconds": 5.1054637739998725,
+    "prompt": "Task: rank movies that a user watches in the next 7 days. Input columns are strictly past KION aggregates. Counts summarize past activity; shares and recencies describe user preferences. Improve CatBoost NDCG@10.\ncol-0: i_rate_w7; training range [0, 0.0759]\ncol-1: i_recency; training range [1, 142]\ncol-2: i_trend_7_30; training range [0.01818, 1]\ncol-3: i_rate_w90; training range [0, 0.04607]\ncol-4: i_count_w7; training range [-1, 1159]\ncol-5: i_watch_w7; training range [-1, 100]\ncol-6: i_count_w30; training range [-1, 5581]\ncol-7: i_rate_w0; training range [4.493e-06, 0.03787]\ncol-8: i_rate_w30; training range [0, 0.07746]\ncol-9: u_count_w7; training range [-1, 72]\ncol-10: i_watch_w30; training range [-1, 100]\ncol-11: ug_watch_w90; training range [-1, 100]\ncol-12: u_recency; training range [1, 138]\ncol-13: ug_share_w0; training range [0, 0.9913]\ncol-14: ug_share_w30; training range [0, 0.9872]\ncol-15: ug_watch_w0; training range [-1, 100]\ncol-16: i_count_w0; training range [1, 8205]\ncol-17: u_trend_7_30; training range [0.01639, 1]\ncol-18: u_count_w30; training range [-1, 97]\ncol-19: ug_count_w0; training range [-1, 120]\ncol-20: ug_recency; training range [1, 999]\ncol-21: ug_count_w30; training range [-1, 77]\ncol-22: release_year; training range [-1, 2021]\ncol-23: u_count_w90; training range [-1, 298]\nOperators: log, sqrt_abs, min_max, reciprocal (unary); +, -, *, /, mod_column (binary). Return exactly ONE comma-separated reverse Polish expression with col-ID operands and at most five operators. No code, no markdown, no target column. Example: col-0,col-1,/\nPreviously evaluated expressions (do not repeat):\n",
+    "response": "col-1,min_max(col-0),sqrt_abs,log(1+col-1)*log(1+col-2)/log(1+col-3)+reciprocal(col-4),col-5*col-6/col-7*col-8+col-9*col-10+ug_share_w0*col-11+col-12*col-13+col-14*col-15*col-16+col-17*col-18+col-19*col-20*col-21*"
+  }
+]

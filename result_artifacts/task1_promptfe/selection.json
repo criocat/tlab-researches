@@ -1,0 +1,34 @@
+{
+  "selected_expressions": {
+    "random": [
+      "11,5,-,1,23,+,*"
+    ],
+    "llm": [
+      "1,3,*,5,-"
+    ]
+  },
+  "validation": {
+    "manual": {
+      "recall@10": 0.6171843023894161,
+      "ndcg@10": 0.46856935963661706,
+      "map@10": 0.36407240742213637,
+      "sampled_logloss": 0.11363211486628999,
+      "sampled_roc_auc": 0.8784417800472842
+    },
+    "random": {
+      "recall@10": 0.6169741542167507,
+      "ndcg@10": 0.4712555327959545,
+      "map@10": 0.3669788336395233,
+      "sampled_logloss": 0.11364060987935903,
+      "sampled_roc_auc": 0.8788848462805344
+    },
+    "llm": {
+      "recall@10": 0.6246195930799257,
+      "ndcg@10": 0.47229898769698486,
+      "map@10": 0.36600442556792445,
+      "sampled_logloss": 0.1133957777723138,
+      "sampled_roc_auc": 0.8790792681967369
+    }
+  },
+  "criterion": "validation ndcg@10; baseline fallback allowed"
+}

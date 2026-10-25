@@ -1,0 +1,179 @@
+{
+  "seed_averaged_paired_ndcg_delta": {
+    "mean": 0.003103422308643541,
+    "ci95": [
+      -0.0005389835116096346,
+      0.006463697330698203
+    ],
+    "users": 1480
+  },
+  "ci_interpretation": "Average each user's metric across training seeds, then bootstrap users; not an ensemble-ranking metric or an independent-time-window CI",
+  "mean_test_metrics": {
+    "auto_selected": {
+      "ndcg@10": 0.4641686642150074,
+      "recall@10": 0.6015214990830821,
+      "map@10": 0.3658056150680158
+    },
+    "generated_all": {
+      "ndcg@10": 0.46419793033106277,
+      "recall@10": 0.6025943098433929,
+      "map@10": 0.36543381774631767
+    },
+    "manual": {
+      "ndcg@10": 0.46106524190636394,
+      "recall@10": 0.6004649500789206,
+      "map@10": 0.3623920907514657
+    },
+    "manual_no_indirect": {
+      "ndcg@10": 0.4358119614609125,
+      "recall@10": 0.5731468191130074,
+      "map@10": 0.339015446569018
+    },
+    "popularity_7d": {
+      "ndcg@10": 0.4330672458317592,
+      "recall@10": 0.582079670518811,
+      "map@10": 0.33345914239069
+    }
+  },
+  "manual_vs_no_indirect_same_seed": 0.023051278018840105,
+  "direct_user_item_importance_sum": 0.0,
+  "top_features": [
+    {
+      "feature": "i_rate_w60",
+      "importance": 8.27225055226763
+    },
+    {
+      "feature": "i_trend_7_30",
+      "importance": 5.949334941203881
+    },
+    {
+      "feature": "genre",
+      "importance": 4.361452979825012
+    },
+    {
+      "feature": "director",
+      "importance": 3.7930229313976547
+    },
+    {
+      "feature": "i_watch_w10",
+      "importance": 3.5168528256340905
+    },
+    {
+      "feature": "i_rate_w30",
+      "importance": 3.413965307719033
+    },
+    {
+      "feature": "i_rate_w0",
+      "importance": 3.40252908522712
+    },
+    {
+      "feature": "i_rate_w5",
+      "importance": 2.7845564740886948
+    },
+    {
+      "feature": "i_rate_w21",
+      "importance": 2.683307003360154
+    },
+    {
+      "feature": "i_count_w2",
+      "importance": 2.668007214544183
+    },
+    {
+      "feature": "ug_recency",
+      "importance": 2.5684183341703553
+    },
+    {
+      "feature": "i_rate_w10",
+      "importance": 2.0333454932465
+    },
+    {
+      "feature": "i_count_w0",
+      "importance": 2.009860469830083
+    },
+    {
+      "feature": "i_count_w60",
+      "importance": 1.9190673437541463
+    },
+    {
+      "feature": "i_count_w3",
+      "importance": 1.8245864530950404
+    }
+  ],
+  "feature_seconds_all_snapshots": 8.915815764994477,
+  "all_search_fit_seconds": 306.8985495160159,
+  "sampled_ranking_audit": {
+    "train": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1482,
+        "cold_positives": 118,
+        "all_positives": 3801,
+        "all_cold_users_skipped": 18,
+        "negative_count": 30,
+        "rows": 48143,
+        "feature_seconds": 1.1941408650018275,
+        "cutoff": "2021-07-12"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1471,
+        "cold_positives": 140,
+        "all_positives": 4014,
+        "all_cold_users_skipped": 29,
+        "negative_count": 30,
+        "rows": 48004,
+        "feature_seconds": 1.2804934890009463,
+        "cutoff": "2021-07-19"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1490,
+        "cold_positives": 94,
+        "all_positives": 4044,
+        "all_cold_users_skipped": 10,
+        "negative_count": 30,
+        "rows": 48650,
+        "feature_seconds": 1.3565103709988762,
+        "cutoff": "2021-07-26"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1480,
+        "cold_positives": 158,
+        "all_positives": 4219,
+        "all_cold_users_skipped": 20,
+        "negative_count": 30,
+        "rows": 48461,
+        "feature_seconds": 1.3657554679957684,
+        "cutoff": "2021-08-02"
+      }
+    ],
+    "valid": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1454,
+        "cold_positives": 234,
+        "all_positives": 4430,
+        "all_cold_users_skipped": 46,
+        "negative_count": 100,
+        "rows": 149596,
+        "feature_seconds": 1.8408761830069125,
+        "cutoff": "2021-08-09"
+      }
+    ],
+    "test": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1480,
+        "cold_positives": 157,
+        "all_positives": 4113,
+        "all_cold_users_skipped": 20,
+        "negative_count": 100,
+        "rows": 151956,
+        "feature_seconds": 1.878039388990146,
+        "cutoff": "2021-08-16"
+      }
+    ]
+  },
+  "timing_limitation": "Manual-only feature materialization was not separately timed; both methods used the shared generated matrix"
+}

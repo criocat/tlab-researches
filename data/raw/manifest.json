@@ -1,0 +1,22 @@
+{
+  "data_original.zip": {
+    "url": "https://raw.githubusercontent.com/irsafilo/KION_DATASET/main/data_original.zip",
+    "sha256": "50fc5b7db78cbda4c3d0ee5bb5bea4c416cff41e8af58aab0b661d0d3e9dfa9b",
+    "bytes": 78795295
+  },
+  "interactions.csv": {
+    "archive_member": "data_original/interactions.csv",
+    "bytes": 180032258,
+    "sha256": "201dc9114eb309da9df6f5f227ada23a371d668edf64a32090fb613a75162ecf"
+  },
+  "items.csv": {
+    "archive_member": "data_original/items.csv",
+    "bytes": 31836561,
+    "sha256": "027c3a0027b4fe4a8db9d5fa626ab40bab507c96aac81d462db0771eb2cb4a8e"
+  },
+  "users.csv": {
+    "archive_member": "data_original/users.csv",
+    "bytes": 29945389,
+    "sha256": "37b2945240628a3f215e1fb5f79b4cff386d8988b21fa61e5b135aef4541182c"
+  }
+}

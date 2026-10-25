@@ -1,0 +1,13 @@
+{
+  "array_hashes": {
+    "train": "9759ede5f6d83dadd5d8b8137ced220ea0cc685e2328b3b75c8366529b08febe",
+    "valid": "3df89d5ca2173e1fc917366b629ea477e652022d797d35b70e75c44ad9fd97c5",
+    "test": "d66930d8ee4d2fa69fbb0281fd2e67ce1700e28eb24224a70daba84902c6d259"
+  },
+  "scope": "Original CPU item/context/user/date arrays, data seed42, 100k train/2k eval",
+  "full_array_hashes": {
+    "train": "20218b0fd4643b5373c40709b8260d4a4850ed3a0771bd7cfcacfe0c4c185c3e",
+    "valid": "3df89d5ca2173e1fc917366b629ea477e652022d797d35b70e75c44ad9fd97c5",
+    "test": "d66930d8ee4d2fa69fbb0281fd2e67ce1700e28eb24224a70daba84902c6d259"
+  }
+}

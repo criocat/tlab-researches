@@ -1,0 +1,11 @@
+{
+  "rows": 5476251,
+  "bad_rows": 0,
+  "users": 962179,
+  "items": 15706,
+  "repeated_user_item_rows": 0,
+  "missing_watched_pct": 828,
+  "min_date": "2021-03-13",
+  "max_date": "2021-08-22",
+  "bytes": 180032258
+}

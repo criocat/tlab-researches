@@ -1,0 +1,78 @@
+{
+  "valid": {
+    "reward": {
+      "watch_mae": 0.3244071304798126,
+      "watch_rmse": 0.371806474190221,
+      "watch_r2": 0.03901547193527222,
+      "n": 2000,
+      "observed_watch_n": 2000,
+      "return3d_n": 1310,
+      "return3d_brier": 0.24965834617614746,
+      "return3d_auc": 0.5707179015512802
+    },
+    "auditor": {
+      "watch_mae": 0.3466164767742157,
+      "watch_rmse": 0.3921188210768772,
+      "watch_r2": -0.06885278224945068,
+      "n": 2000,
+      "observed_watch_n": 2000,
+      "return3d_n": 1310,
+      "return3d_brier": 0.2482621967792511,
+      "return3d_auc": 0.5737230488413279
+    },
+    "global_mean_baseline": {
+      "watch_mae": 0.3671044111251831,
+      "watch_rmse": 0.3961755335330963
+    },
+    "shrunk_item_mean_baseline": {
+      "watch_mae": 0.3389669499117033,
+      "watch_rmse": 0.3791381963584098,
+      "prior_weight": 20
+    },
+    "return_prior_baseline": {
+      "return3d_train_prior": 0.5032450556755066,
+      "return3d_observed_prevalence": 0.4404580295085907,
+      "return3d_brier": 0.2503969669342041,
+      "return3d_n": 1310,
+      "return3d_auc": 0.5
+    }
+  },
+  "test": {
+    "reward": {
+      "watch_mae": 0.3356679677963257,
+      "watch_rmse": 0.3786972688723512,
+      "watch_r2": 0.012195408344268799,
+      "n": 2000,
+      "observed_watch_n": 2000,
+      "return3d_n": 1285,
+      "return3d_brier": 0.250436931848526,
+      "return3d_auc": 0.565542392005158
+    },
+    "auditor": {
+      "watch_mae": 0.35152068734169006,
+      "watch_rmse": 0.3959704107382636,
+      "watch_r2": -0.07997119426727295,
+      "n": 2000,
+      "observed_watch_n": 2000,
+      "return3d_n": 1285,
+      "return3d_brier": 0.25022900104522705,
+      "return3d_auc": 0.5595520531108962
+    },
+    "global_mean_baseline": {
+      "watch_mae": 0.3676195740699768,
+      "watch_rmse": 0.396808385848999
+    },
+    "shrunk_item_mean_baseline": {
+      "watch_mae": 0.34490446603854497,
+      "watch_rmse": 0.38337281326300043,
+      "prior_weight": 20
+    },
+    "return_prior_baseline": {
+      "return3d_train_prior": 0.5032450556755066,
+      "return3d_observed_prevalence": 0.40233463048934937,
+      "return3d_brier": 0.25064435601234436,
+      "return3d_n": 1285,
+      "return3d_auc": 0.5
+    }
+  }
+}

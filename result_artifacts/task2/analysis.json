@@ -1,0 +1,156 @@
+{
+  "selected_on_validation": "rl_balanced_5step",
+  "selected_test_ndcg_relative_change": -0.034258811720914384,
+  "selected_test_watch_proxy_relative_change": 0.06847112221664009,
+  "selected_paired_ci": {
+    "ndcg_delta": -0.0032674020268010444,
+    "ci95": [
+      -0.006838445179999522,
+      0.00023253183987824083
+    ]
+  },
+  "unconstrained_ndcg_relative_change": -0.01858900548000031,
+  "unconstrained_watch_proxy_relative_change": 0.13738001143214684,
+  "unconstrained_max_item_user_fraction": 0.9895,
+  "sft_max_item_user_fraction": 0.8415,
+  "cold_target_fraction": 0.0825,
+  "limitations": [
+    "RM explains little watch-fraction variance on held-out logged targets",
+    "Independent initialization is not independent ground truth",
+    "Generated context is hypothetical consumption, not a user transition",
+    "Three-day return is a censored correlation proxy; no logged propensities or online treatment outcomes"
+  ],
+  "reward_mae_gain_over_item_mean": {
+    "mean": 0.009236502563556043,
+    "ci95": [
+      0.005390108389787624,
+      0.013256616078153705
+    ],
+    "users": 2000
+  },
+  "recommendation_reward_support": {
+    "sft": {
+      "mean": 1143.60245,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.00165
+    },
+    "rl_watch_unconstrained": {
+      "mean": 1337.64025,
+      "median": 1377.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.00085
+    },
+    "rl_watch_kl01": {
+      "mean": 1158.1531,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.0026
+    },
+    "rl_watch_kl1": {
+      "mean": 1139.8196,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.0018
+    },
+    "rl_balanced_5step": {
+      "mean": 1127.0848,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.00255
+    },
+    "rl_return_5step": {
+      "mean": 1094.4903,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.0026
+    },
+    "continued_sft_control": {
+      "mean": 1126.71845,
+      "median": 835.0,
+      "zero_fraction": 0.0,
+      "at_most_five_fraction": 0.00265
+    }
+  },
+  "one_step_rl_vs_continued_sft_ndcg": {
+    "mean": 0.0011014581125968889,
+    "ci95": [
+      -0.0025936030521935168,
+      0.004587801333275394
+    ],
+    "users": 2000
+  },
+  "one_step_rl_vs_continued_sft_watch_proxy_delta": 0.03687256574630737,
+  "fifth_hypothetical_step": {
+    "sft": {
+      "step": 5,
+      "predicted_reward_free_context": 0.2927238941192627,
+      "predicted_reward_frozen_context": 0.316365510225296,
+      "auditor_reward": 0.3272467851638794,
+      "within_rollout_repeat": 0.95703125,
+      "history_repeat": 0.19140625,
+      "kl_on_generated_context": 0.0,
+      "distinct_items": 19
+    },
+    "rl_watch_unconstrained": {
+      "step": 5,
+      "predicted_reward_free_context": 0.6318546533584595,
+      "predicted_reward_frozen_context": 0.652511477470398,
+      "auditor_reward": 0.6126827001571655,
+      "within_rollout_repeat": 0.98828125,
+      "history_repeat": 0.25,
+      "kl_on_generated_context": 1.466863989830017,
+      "distinct_items": 6
+    },
+    "rl_watch_kl01": {
+      "step": 5,
+      "predicted_reward_free_context": 0.44451165199279785,
+      "predicted_reward_frozen_context": 0.4493585228919983,
+      "auditor_reward": 0.44614750146865845,
+      "within_rollout_repeat": 0.92578125,
+      "history_repeat": 0.25,
+      "kl_on_generated_context": 0.031062355265021324,
+      "distinct_items": 24
+    },
+    "rl_watch_kl1": {
+      "step": 5,
+      "predicted_reward_free_context": 0.36582663655281067,
+      "predicted_reward_frozen_context": 0.3773607909679413,
+      "auditor_reward": 0.38138675689697266,
+      "within_rollout_repeat": 0.90234375,
+      "history_repeat": 0.21484375,
+      "kl_on_generated_context": 0.00512510584667325,
+      "distinct_items": 21
+    },
+    "rl_balanced_5step": {
+      "step": 5,
+      "predicted_reward_free_context": 0.5096768140792847,
+      "predicted_reward_frozen_context": 0.49969232082366943,
+      "auditor_reward": 0.5031833648681641,
+      "within_rollout_repeat": 0.93359375,
+      "history_repeat": 0.26171875,
+      "kl_on_generated_context": 0.02871168777346611,
+      "distinct_items": 24
+    },
+    "rl_return_5step": {
+      "step": 5,
+      "predicted_reward_free_context": 0.46306395530700684,
+      "predicted_reward_frozen_context": 0.45277634263038635,
+      "auditor_reward": 0.4577144682407379,
+      "within_rollout_repeat": 0.93359375,
+      "history_repeat": 0.23828125,
+      "kl_on_generated_context": 0.016599835827946663,
+      "distinct_items": 24
+    },
+    "continued_sft_control": {
+      "step": 5,
+      "predicted_reward_free_context": 0.28612375259399414,
+      "predicted_reward_frozen_context": 0.30936214327812195,
+      "auditor_reward": 0.31938719749450684,
+      "within_rollout_repeat": 0.91015625,
+      "history_repeat": 0.17578125,
+      "kl_on_generated_context": 0.010613929480314255,
+      "distinct_items": 21
+    }
+  }
+}

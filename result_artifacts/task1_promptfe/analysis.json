@@ -1,0 +1,47 @@
+{
+  "budget": {
+    "random": {
+      "attempts": 12,
+      "valid": 12,
+      "attempt_seconds": 368.6801106339699
+    },
+    "llm": {
+      "attempts": 45,
+      "valid": 12,
+      "attempt_seconds": 1378.9443148750433
+    }
+  },
+  "llm_minus_random": {
+    "ndcg": {
+      "delta": -0.0015536714714546093,
+      "ci95": [
+        -0.005178060270457228,
+        0.0022951965696539176
+      ]
+    },
+    "recall": {
+      "delta": -0.0010029076157592783,
+      "ci95": [
+        -0.007053425801048083,
+        0.005110594737752658
+      ]
+    },
+    "map": {
+      "delta": -0.0014981965383751093,
+      "ci95": [
+        -0.005979255656059971,
+        0.003079826034048504
+      ]
+    }
+  },
+  "invalid_reasons": {
+    "No valid restricted infix expression: '(' was never closed (<unknown>, line 1)": 3,
+    "No valid restricted infix expression: Unsupported expression syntax": 17,
+    "No valid restricted infix expression: invalid syntax (<unknown>, line 1)": 4,
+    "No valid restricted infix expression: More than five operators": 5,
+    "No valid restricted infix expression: Unsupported expression syntax; More than five operators": 2,
+    "No valid restricted infix expression: Unsupported expression syntax; Unsupported expression syntax": 1,
+    "No valid restricted infix expression: Unsupported expression syntax; '(' was never closed (<unknown>, line 1)": 1
+  },
+  "timing_limitation": "CPU search partially overlapped the original RPN worker; not an isolated hardware benchmark"
+}

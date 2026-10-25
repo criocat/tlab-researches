@@ -1,0 +1,10 @@
+{
+  "requested_users": 50000,
+  "sampled_users": 50000,
+  "rows": 285343,
+  "sampling_seed": 42,
+  "user_ids_sha256": "9447b9af4987eea213159dd445fa3f0b1e7c61ba6dccddb8052c8cb3ed45c6d7",
+  "min_timestamp": "2021-03-13 00:00:00",
+  "max_timestamp": "2021-08-22 00:00:00",
+  "policy": "Uniform user sample; all released source rows retained for every selected user"
+}

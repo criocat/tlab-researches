@@ -1,0 +1,34 @@
+{
+  "worker_log": "artifacts/task1_promptfe_infix.log",
+  "final_stdout_metrics": [
+    {
+      "method": "manual",
+      "selected_features": 0,
+      "recall@10": 0.6005548049546232,
+      "ndcg@10": 0.4588632394797526,
+      "map@10": 0.3595620716379645,
+      "sampled_logloss": 0.11115757531476535,
+      "sampled_roc_auc": 0.8678968185513624
+    },
+    {
+      "method": "random",
+      "selected_features": 1,
+      "recall@10": 0.5996170855794039,
+      "ndcg@10": 0.46131844846428527,
+      "map@10": 0.36267916736889944,
+      "sampled_logloss": 0.11138486005307588,
+      "sampled_roc_auc": 0.8679652631650862
+    },
+    {
+      "method": "llm",
+      "selected_features": 1,
+      "recall@10": 0.5986141779636446,
+      "ndcg@10": 0.4597647769928307,
+      "map@10": 0.36118097083052436,
+      "sampled_logloss": 0.11134686781621936,
+      "sampled_roc_auc": 0.8675987475405131
+    }
+  ],
+  "copied_metrics_match_final_stdout": true,
+  "note": "Dedicated proposal snapshots and original protocol restored; worker ran to its bounded completion"
+}

@@ -1,0 +1,793 @@
+{
+  "args": {
+    "users": 50000,
+    "queries": 1500,
+    "iterations": 350,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "out": "artifacts/task1"
+  },
+  "audits": {
+    "train": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1482,
+        "cold_positives": 118,
+        "all_positives": 3801,
+        "all_cold_users_skipped": 18,
+        "negative_count": 30,
+        "rows": 48143,
+        "feature_seconds": 1.1941408650018275,
+        "cutoff": "2021-07-12"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1471,
+        "cold_positives": 140,
+        "all_positives": 4014,
+        "all_cold_users_skipped": 29,
+        "negative_count": 30,
+        "rows": 48004,
+        "feature_seconds": 1.2804934890009463,
+        "cutoff": "2021-07-19"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1490,
+        "cold_positives": 94,
+        "all_positives": 4044,
+        "all_cold_users_skipped": 10,
+        "negative_count": 30,
+        "rows": 48650,
+        "feature_seconds": 1.3565103709988762,
+        "cutoff": "2021-07-26"
+      },
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1480,
+        "cold_positives": 158,
+        "all_positives": 4219,
+        "all_cold_users_skipped": 20,
+        "negative_count": 30,
+        "rows": 48461,
+        "feature_seconds": 1.3657554679957684,
+        "cutoff": "2021-08-02"
+      }
+    ],
+    "valid": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1454,
+        "cold_positives": 234,
+        "all_positives": 4430,
+        "all_cold_users_skipped": 46,
+        "negative_count": 100,
+        "rows": 149596,
+        "feature_seconds": 1.8408761830069125,
+        "cutoff": "2021-08-09"
+      }
+    ],
+    "test": [
+      {
+        "eligible_sampled_users": 1500,
+        "ranking_queries": 1480,
+        "cold_positives": 157,
+        "all_positives": 4113,
+        "all_cold_users_skipped": 20,
+        "negative_count": 100,
+        "rows": 151956,
+        "feature_seconds": 1.878039388990146,
+        "cutoff": "2021-08-16"
+      }
+    ]
+  },
+  "sample_rows": 285343,
+  "sample_users": 50000,
+  "feature_specs": [
+    {
+      "window_days": 7,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 7,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 7,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 7,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 7,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 30,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 30,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 30,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 30,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 30,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 90,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 90,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 90,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 90,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 90,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 0,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 0,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 0,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 0,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 0,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 2,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 2,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 2,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 2,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 2,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 3,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 3,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 3,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 3,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 3,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 5,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 5,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 5,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 5,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 5,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 10,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 10,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 10,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 10,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 10,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 14,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 14,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 14,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 14,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 14,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 21,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 21,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 21,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 21,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 21,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 45,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 45,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 45,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 45,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 45,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 60,
+      "path": "u",
+      "keys": [
+        "user_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 60,
+      "path": "i",
+      "keys": [
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 60,
+      "path": "ui",
+      "keys": [
+        "user_id",
+        "item_id"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 60,
+      "path": "ug",
+      "keys": [
+        "user_id",
+        "genre"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    },
+    {
+      "window_days": 60,
+      "path": "ud",
+      "keys": [
+        "user_id",
+        "director"
+      ],
+      "aggregations": [
+        "count",
+        "watched_mean"
+      ]
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "catboost": "1.2.10",
+    "scikit-learn": "1.9.1"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "args": {
+    "feature_dir": "artifacts/task1",
+    "out": "artifacts/task1_promptfe",
+    "proposals": 12,
+    "iterations": 350,
+    "seed": 42,
+    "model": ".cache/models/qwen2.5-coder-1.5b-instruct",
+    "revision": null,
+    "replay": null,
+    "syntax": "infix"
+  },
+  "upstream": "zyf505/PromptFE@fd719299cd058b7df55a1cd90d1c3b727d9275f5",
+  "prompt_columns": [
+    "i_rate_w7",
+    "i_recency",
+    "i_trend_7_30",
+    "i_rate_w90",
+    "i_count_w7",
+    "i_watch_w7",
+    "i_count_w30",
+    "i_rate_w0",
+    "i_rate_w30",
+    "u_count_w7",
+    "i_watch_w30",
+    "ug_watch_w90",
+    "u_recency",
+    "ug_share_w0",
+    "ug_share_w30",
+    "ug_watch_w0",
+    "i_count_w0",
+    "u_trend_7_30",
+    "u_count_w30",
+    "ug_count_w0",
+    "ug_recency",
+    "ug_count_w30",
+    "release_year",
+    "u_count_w90"
+  ],
+  "llm": {
+    "model": ".cache/models/qwen2.5-coder-1.5b-instruct",
+    "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+    "backend": "local transformers",
+    "seed": 42,
+    "max_new_tokens": 128,
+    "temperature": 0.7
+  },
+  "changes": [
+    "KION point-in-time aggregates",
+    "chronological holdout instead of CV",
+    "CatBoost ranking metric",
+    "local LLM instead of GPT API",
+    "test hidden until selection"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "data_seconds": 102.68141749000642,
+  "sft_seconds": 318.8236021240009,
+  "reward_seconds": 4.7842217330035055,
+  "rl_seconds": {
+    "rl_watch_unconstrained": 6.69196351399296,
+    "rl_watch_kl01": 6.728267073005554,
+    "rl_watch_kl1": 6.652364387991838,
+    "rl_balanced_5step": 27.401563940991764,
+    "rl_return_5step": 27.566280903003644
+  },
+  "total_seconds": 506.2192693219986,
+  "max_rss_kib": 894868,
+  "cuda_peak_allocated_bytes": null
+}
